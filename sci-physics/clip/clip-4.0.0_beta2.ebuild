@@ -12,9 +12,9 @@ SRC_URI="mirror://sourceforge/clip4/Clip4_beta2_source.zip"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-RDEPEND="dev-libs/popt"
+RDEPEND="dev-cpp/eigen"
 DEPEND="${RDEPEND}
-	dev-cpp/eigen
+	dev-cpp/eigen"
 
 # see http://www.gentoo.org/proj/en/desktop/qt/qt4-based-ebuild-howto.xml
 src_configure() {
@@ -22,6 +22,6 @@ src_configure() {
 }
 
 src_install() {
-
 	emake DESTDIR="${D}" install
-	dodoc README CHANGES}
+	dodoc README CHANGES
+}
