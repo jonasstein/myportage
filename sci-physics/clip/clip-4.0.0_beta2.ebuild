@@ -2,10 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 EAPI=5
-
 # see http://www.gentoo.org/proj/en/desktop/qt/qt4-based-ebuild-howto.xml
 # You still need to inherit qt4-r2 to use eqmake4
-
 inherit qt4-r2 versionator
 DESCRIPTION="Interactive program for evaluation of Laue diffraction patterns"
 HOMEPAGE="http://clip4.sf.net/"
