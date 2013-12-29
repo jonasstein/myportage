@@ -18,7 +18,6 @@ RDEPEND="dev-cpp/eigen:3"
 DEPEND="${RDEPEND}
 		dev-vcs/mercurial"
 
-
 src_prepare()
 {
 		sed -i 's|../eigen|/usr/include/eigen3|' Clip4.pro || die "sed failed"
