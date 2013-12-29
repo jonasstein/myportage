@@ -9,11 +9,12 @@ EAPI=5
 inherit qt4-r2 versionator
 DESCRIPTION="Interactive program for evaluation of Laue diffraction patterns"
 HOMEPAGE="http://clip4.sf.net/"
+SRC_URI=""
 EHG_REPO_URI="http://hg.code.sf.net/p/clip4/code"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS=""
-RDEPEND="dev-cpp/eigen"
+RDEPEND="dev-cpp/eigen:3"
 DEPEND="${RDEPEND}
 		dev-vcs/mercurial"
 
@@ -23,11 +24,6 @@ src_configure() {
 		eqmake4 "${S}"/Clip4.pro
 }
 
-src_unpack() {
-		default
-
-		mv "${WORKDIR}"/Clip* "${S}" || die "Failed to move source directory."
-}
 
 src_prepare()
 {
