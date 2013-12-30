@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer>
+		<email>news@jonasstein.de</email>
+		<name>Jonas Stein</name>
+		<description>McStas - A neutron ray-trace simulation package</description>
+	</maintainer>
+	<longdescription> McStas is a general tool for simulating neutron scattering instruments and experiments. It is actively supported by DTU Physics, NBI KU, PSI and ILL. </longdescription>
+</pkgmetadata>
