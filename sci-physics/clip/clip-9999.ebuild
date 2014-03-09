@@ -13,7 +13,7 @@ SRC_URI=""
 EHG_REPO_URI="http://hg.code.sf.net/p/clip4/code"
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 RDEPEND="dev-cpp/eigen:3"
 DEPEND="${RDEPEND}
 		dev-vcs/mercurial"
