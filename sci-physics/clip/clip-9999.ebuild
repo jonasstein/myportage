@@ -1,4 +1,4 @@
-# Copyright 1999-2013 Gentoo Foundation
+# Copyright 1999-2014 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 EAPI=5
@@ -11,7 +11,7 @@ DESCRIPTION="Interactive program for evaluation of Laue diffraction patterns"
 HOMEPAGE="http://clip4.sf.net/"
 SRC_URI=""
 EHG_REPO_URI="http://hg.code.sf.net/p/clip4/code"
-LICENSE="GPL-3"
+LICENSE="GPL-3+"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 RDEPEND="dev-cpp/eigen:3"
