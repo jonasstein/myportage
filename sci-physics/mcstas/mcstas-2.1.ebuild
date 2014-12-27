@@ -19,7 +19,6 @@ RDEPEND="dev-perl/perl-tk
 		 dev-perl/PDL
 		 sci-visualization/gnuplot"
 
-
 DEPEND="${RDEPEND}"
 
 src_install()
