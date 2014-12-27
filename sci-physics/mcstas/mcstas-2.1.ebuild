@@ -3,15 +3,23 @@
 # $Header: $
 EAPI=5
 
+#SRC_URI="http://downloads.mcstas.org/mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src.tar.gz"
+
+MY_P=${mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src}
+SRC_URI="http://downloads.mcstas.org/${MY_P}.tar.gz"
+S=${WORKDIR}/${MY_P}
+
 DESCRIPTION="A neutron ray-trace simulation package"
 HOMEPAGE="http://www.mcstas.org/"
-SRC_URI="http://downloads.mcstas.org/mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src.tar.gz"
+
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 RDEPEND="dev-perl/perl-tk
 		 dev-perl/PDL
 		 sci-visualization/gnuplot"
+S="${WORKDIR}/${P}"
+
 DEPEND="${RDEPEND}"
 
 src_install()
