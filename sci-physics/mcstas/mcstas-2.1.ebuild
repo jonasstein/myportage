@@ -3,6 +3,8 @@
 # $Header: $
 EAPI=5
 
+inherit cmake-utils
+
 SRC_URI="http://downloads.mcstas.org/mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src.tar.gz"
 
 S=${WORKDIR}/${P}-src
@@ -21,7 +23,7 @@ DEPEND="${RDEPEND}"
 
 src_install()
 {
-	dobin mcstas
-	doman mcstas
-	doman mcformat
+#	dobin mcstas
+#	doman mcstas
+#	doman mcformat
 }
