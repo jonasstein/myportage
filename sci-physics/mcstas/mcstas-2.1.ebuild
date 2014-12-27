@@ -18,7 +18,7 @@ KEYWORDS="~amd64 ~x86"
 RDEPEND="dev-perl/perl-tk
 		 dev-perl/PDL
 		 sci-visualization/gnuplot"
-S="${WORKDIR}/${P}"
+
 
 DEPEND="${RDEPEND}"
 
