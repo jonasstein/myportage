@@ -3,11 +3,9 @@
 # $Header: $
 EAPI=5
 
-#SRC_URI="http://downloads.mcstas.org/mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src.tar.gz"
+SRC_URI="http://downloads.mcstas.org/mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src.tar.gz"
 
-MY_P=${mcstas-2.1/linux/mcstas-2.1-src/McStas-2.1-UNIX-src/mcstas-2.1-src}
-SRC_URI="http://downloads.mcstas.org/${MY_P}.tar.gz"
-S=${WORKDIR}/${MY_P}
+S=${WORKDIR}/${P}-src
 
 DESCRIPTION="A neutron ray-trace simulation package"
 HOMEPAGE="http://www.mcstas.org/"
