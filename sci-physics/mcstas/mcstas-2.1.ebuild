@@ -16,22 +16,7 @@ DEPEND="${RDEPEND}"
 
 src_install()
 {
-		dobin mcstas
+	dobin mcstas
+	doman mcstas
+	doman mcformat
 }
-
-#src_configure() {
-#		eqmake4 "${S}"/Clip4.pro
-#}
-
-#src_unpack() {
-#		default
-#
-#		mv "${WORKDIR}"/Clip* "${S}" || die "Failed to move source directory."
-#}
-
-#src_prepare()
-#{
-#		sed -i 's|../eigen|/usr/include/eigen3|' Clip4.pro || die "sed failed"
-#		sed -i 's|shell hg|shell true|g' Clip4.pro || die "sed failed"
-#}
-#		dodoc README.txt License.txt
