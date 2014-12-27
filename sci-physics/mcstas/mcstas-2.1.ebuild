@@ -21,12 +21,7 @@ RDEPEND="dev-perl/perl-tk
 
 DEPEND="${RDEPEND}"
 
-# no idea what it does, but blender uses it:
+# http://devmanual.gentoo.org/ebuild-writing/common-mistakes/ suggests to run cmake-utils_src_compile for some reason
 src_compile() {
 	cmake-utils_src_compile
 }
-
-# no idea what it does, but blender uses it:
-src_install() {
-	local i
-	}
