@@ -21,9 +21,12 @@ RDEPEND="dev-perl/perl-tk
 
 DEPEND="${RDEPEND}"
 
-src_install()
-{
-#	dobin mcstas
-#	doman mcstas
-#	doman mcformat
+# no idea what it does, but blender uses it:
+src_compile() {
+	cmake-utils_src_compile
 }
+
+# no idea what it does, but blender uses it:
+src_install() {
+	local i
+	}
