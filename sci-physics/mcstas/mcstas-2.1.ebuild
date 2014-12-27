@@ -21,7 +21,15 @@ RDEPEND="dev-perl/perl-tk
 
 DEPEND="${RDEPEND}"
 
+src_configure(){
+	mycmakeargs="-DCMAKE_INSTALL_PREFIX=/usr"
+}
+
+# cmake-utils_src_configure
+
 # http://devmanual.gentoo.org/ebuild-writing/common-mistakes/ suggests to run cmake-utils_src_compile for some reason
 src_compile() {
 	cmake-utils_src_compile
+	dobin mcstas/2.1/bin/mcstas
+	dobin mcstas/2.1/bin/mcformat
 }
