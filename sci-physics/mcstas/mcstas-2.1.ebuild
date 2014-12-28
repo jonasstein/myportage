@@ -22,7 +22,7 @@ RDEPEND="dev-perl/perl-tk
 DEPEND="${RDEPEND}"
 
 src_configure(){
-	mycmakeargs="-DCMAKE_INSTALL_PREFIX=/usr"
+	mycmakeargs=( -DCMAKE_INSTALL_PREFIX=/usr )
 	cmake-utils_src_configure
 }
 
