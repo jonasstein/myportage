@@ -30,3 +30,9 @@ src_configure(){
 src_compile() {
 	cmake-utils_src_compile
 }
+# TODO:
+# after compile stage we find the binary in /usr/mcstas/2.1/bin/mcstas
+# this problem might be a result of hard coded folders in .cmake files
+# like cmake/Modules/InstallMCCODE.cmake
+# # Set BIN and LIB paths    set(MCCODE_BIN "${CMAKE_INSTALL_PREFIX}${MCCODE_NAME}/${bin}/${FLAVOR}")
+# thanks to iamben and grknight at #gentoo-dev-help
