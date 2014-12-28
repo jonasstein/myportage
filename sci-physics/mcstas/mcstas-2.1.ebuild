@@ -23,9 +23,8 @@ DEPEND="${RDEPEND}"
 
 src_configure(){
 	mycmakeargs="-DCMAKE_INSTALL_PREFIX=/usr"
+	cmake-utils_src_configure
 }
-
-# cmake-utils_src_configure
 
 # http://devmanual.gentoo.org/ebuild-writing/common-mistakes/ suggests to run cmake-utils_src_compile for some reason
 src_compile() {
